@@ -1,0 +1,89 @@
+{
+    "key": "42",
+    "chainId": 42,
+    "chainName": "Ethereum",
+    "name": "Ethereum Testnet Kovan",
+    "shortName": "Kovan",
+    "network": "kovan",
+    "unknown": false,
+    "rpc": "https://kovan.infura.io/v3/{{INFURA_KEY}}",
+    "ws": "wss://kovan.infura.io/ws/v3/{{INFURA_KEY}}",
+    "loggingRpc": "https://eth-kovan.alchemyapi.io/v2/{{ALCHEMY_KEY}}",
+    "explorer": "https://kovan.etherscan.io",
+    "explorerName": "Etherscan",
+    "subgraph": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-kovan-v2",
+    "poolsUrlV2": "https://storageapi.fleek.co/johngrantuk-team-bucket/poolsRc02.json",
+    "subgraphs": {
+      "main": [
+        "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-kovan-v2"
+      ],
+      "aave": "https://api.thegraph.com/subgraphs/name/aave/protocol-v2-kovan",
+      "gauge": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-gauges-kovan",
+      "blocks": "https://api.thegraph.com/subgraphs/name/blocklytics/kovan-blocks"
+    },
+    "supportsEIP1559": true,
+    "supportsElementPools": true,
+    "blockTime": 12,
+    "nativeAsset": {
+      "name": "Ether",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "symbol": "ETH",
+      "decimals": 18,
+      "deeplinkId": "ether",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+      "minTransactionBuffer": "0.05"
+    },
+    "addresses": {
+      "bFactory": "0xe65141130E5bb385501486e774d2BA943e6211b3",
+      "bActions": "0xdCd71BdF7803413faa1ea5EE9922fDdFA2220a01",
+      "dsProxyRegistry": "0x293c58a69CD81aebc1DB07977b0aa375791896bC",
+      "merkleRedeem": "0xe47577D94C9fF97C47c57fe931dA1A4E4DeD9136",
+      "merkleOrchard": "0x0F0c12B8c089cb22ca4d29B8F1e3C477f04Df877",
+      "multicall": "0x9Db146A23DDeB95f0be5C2361a31B98C1d1808cb",
+      "authorizer": "0xFDA79BDe473673aE8150638765A0cdfADdDDfe43",
+      "vault": "0xbDaE1B9b37625c13aa2A66Be53109940f10a424D",
+      "weightedPoolFactory": "0x09c12c859D6842E0ee104eDa4ef6eC3204CC6E7F",
+      "stablePoolFactory": "",
+      "tokenFactory": "0xEaa391544B268018C0FA848204E984Bd7FF7f20c",
+      "weth": "0xdFCeA9088c8A88A76FF74892C1457C17dfeef9C1",
+      "stETH": "0x4803BB90d18a1Cb7a2187344Fe4feb0E07878D05",
+      "wstETH": "0xA387B91e393cFB9356A460370842BC8dBB2F29aF",
+      "lidoRelayer": "0xd4058Dbe72f4042f62f375f811e75Ab003da51D8",
+      "balancerHelpers": "0x55121B2AC16E8798D931c90bB941d608408b151d",
+      
+      "batchRelayer": "WE NNED",
+      
+      "gaugeFactory": "0xd561043759495414813103fD73928edeDbA3a29c",
+      "balancerMinter": "0xE1008f2871F5f5c3da47f806dEbA3cD83Fe0E55B",
+      "gaugeController": "0x28be1a58a534b281c3a22df28d3720323bff331d",
+      "tokenAdmin": "0x3dc24beAFEdd1EA05fF4384042B0baf6E32240E9",  // ok
+      "veBAL": "0x0BA4d28a89b0aB0c48253f4f36B204DE24354651",
+      "veDelegationProxy": "0x5C7c4bdfEf212F3154156A84e8e44abed73D104b",
+      "veBALHelpers": "",
+      "feeDistributor": "0xcC508a455F5b0073973107Db6a878DdBDab957bC",
+      "feeDistributorDeprecated": "0xcC508a455F5b0073973107Db6a878DdBDab957bC",
+      "faucet": ""
+    },
+    "keys": {
+      "infura": "daaa68ec242643719749dd1caba2fc66",
+      "alchemy": "oGLgncMVHNWltnK0nTfiryxQ6gYemKQO"
+    },
+    "strategies": {
+      "0": {
+        "type": "0",
+        "name": "stablePool"
+      },
+      "1": {
+        "type": "1",
+        "name": "weightedPool"
+      },
+      "2": {
+        "type": "2",
+        "name": "weightedPool"
+      }
+    },
+    "gauges": {
+      "type": 1,
+      "weight": 100
+    }
+  }

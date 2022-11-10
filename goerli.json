@@ -1,0 +1,83 @@
+{
+    "key": "5",
+    "chainId": 5,
+    "chainName": "Ethereum",
+    "name": "Ethereum Testnet Goerli",
+    "shortName": "Goerli",
+    "network": "goerli",
+    "unknown": false,
+    "rpc": "https://goerli.infura.io/v3/{{INFURA_KEY}}",
+    "ws": "wss://goerli.infura.io/ws/v3/{{INFURA_KEY}}",
+    "loggingRpc": "https://eth-goerli.alchemyapi.io/v2/{{ALCHEMY_KEY}}",
+    "explorer": "https://goerli.etherscan.io",
+    "explorerName": "Etherscan",
+    "subgraph": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-goerli-v2",
+    "poolsUrlV2": "",
+    "subgraphs": {
+      "main": [
+        "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-goerli-v2"
+      ],
+      "aave": "https://api.thegraph.com/subgraphs/name/aave/protocol-v2",
+      "gauge": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-gauges-goerli",
+      "blocks": "https://api.thegraph.com/subgraphs/name/blocklytics/goerli-blocks"
+    },
+    "supportsEIP1559": true,
+    "supportsElementPools": true,
+    "blockTime": 12,
+    "nativeAsset": {
+      "name": "Ether",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "symbol": "ETH",
+      "decimals": 18,
+      "deeplinkId": "ether",
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+      "minTransactionBuffer": "0.05"
+    },
+    "addresses": {
+      "merkleRedeem": "",
+      "merkleOrchard": "0x68E0c6FeCdB2E844F10D84453B0EfDCD5a1Ffb53",//ok
+      "multicall": "0x22feBa589c888C3719F65F7c9fE9F1AEd6D754B9",//ok
+      "authorizer": "0x26E5F5aDED962457d9dA63B961fF6F9FD02F5Bb4",//ok
+      "vault": "0xfB2DBe874a81FB9870C77e102dfA96f489E996B7",//ok
+      "weightedPoolFactory": "0x86937f36a8C2Ce2d48717F23881b78822eC735EC",//ok
+      "stablePoolFactory": "0x2EDa262f08C69943F40bF7E62ca4361496857637",//ok
+      "weth": "0xdFCeA9088c8A88A76FF74892C1457C17dfeef9C1",//ok
+      "stETH": "0x1643E812aE58766192Cf7D2Cf9567dF2C37e9B7F",
+      "wstETH": "0x6320cD32aA674d2898A68ec82e869385Fc5f7E2f",
+      "lidoRelayer": "",
+      "balancerHelpers": "0x94092CD385450475302ea3e7c26220DD33f08af8",//ok
+      "batchRelayer": "0xF76F17ED010483f89af9Ef29F67423891DDD1e98",//ok
+      "gaugeFactory": "",
+      "balancerMinter": "",
+      "gaugeController": "",
+      "tokenAdmin": "",
+      "veBAL": "",
+      "veDelegationProxy": "",
+      "veBALHelpers": "",
+      "feeDistributor": "",
+      "feeDistributorDeprecated": "",
+      "faucet": ""
+    },
+    "keys": {
+      "infura": "daaa68ec242643719749dd1caba2fc66",
+      "alchemy": "oGLgncMVHNWltnK0nTfiryxQ6gYemKQO"
+    },
+    "strategies": {
+      "0": {
+        "type": "0",
+        "name": "stablePool"
+      },
+      "1": {
+        "type": "1",
+        "name": "weightedPool"
+      },
+      "2": {
+        "type": "2",
+        "name": "weightedPool"
+      }
+    },
+    "gauges": {
+      "type": 2,
+      "weight": 100
+    }
+  }
